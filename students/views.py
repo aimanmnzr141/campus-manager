@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Welcome to The Student Management System ")
+    return render(request, "home.html")
 
 
 def add_student(request):
